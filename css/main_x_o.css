@@ -4,23 +4,34 @@
 }
 
 body{
-  background-color: #FFC0CB;
+  background-color: #dcdbd9;
+  color: #803b3d;
   padding-top: 1%;
   text-align: center;  
 }
 
 #canvasDiv{
-  margin: 150px auto 40px;
+  margin: 120px auto 40px;
 }
 
-.canvas{
+canvas{
   height: 50px;
   width: 50px;
-  border: 1px solid red;
+  border: 1px solid #803b3d;
+  -webkit-transition:webkit-transform 2s;
+}
+
+canvas:hover{
+  width: 51px;
+  height: 49px;
 }
 
 #reloadButton{
   text-decoration: none;
   font: 20px Arial, sans-serif;
-  color: #2E8B57;  color: ;
+  color: #803b3d;  color: ;
+}
+
+#reloadButton:hover{
+  font-size: 22px;
 }

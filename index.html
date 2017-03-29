@@ -10,9 +10,34 @@
     <link href="css/main_x_o.css" rel="stylesheet" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Alice|Bad+Script|Open+Sans" rel="stylesheet">
     <script src="js/script_x_o.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
   </head>
   <body>
 
+    <h1>Game x_o</h1>
+
+    <!--Дані про гравців-->
+    <div class=conteiner players>
+      <div class=row>
+        <div class=col-md-6 player1>
+          <p id="player1">Гравець 1</p>
+          <form name="player1form">
+            <input type="text" name="id" id="fname1" onchange="changeName1()" value="Введіть ім'я">
+            <input type="button" value="ок!" >
+          </form>
+        </div>
+
+        <div class=col-md-6 player2>
+          <p id="player2">Гравець 2</p>
+          <form name="player2form">
+            <input type="text" name="id" id="fname2" onchange="changeName2()" value="Введіть ім'я">
+            <input type="button" value="ок!">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Game-->
     <div id="canvasDiv" >
       <canvas id="canvas1" onclick ="onclick(1)"></canvas>
       <canvas id="canvas2" onclick ="onclick(2)"></canvas>
@@ -26,6 +51,6 @@
     </div>
 
     <a href="#" id="reloadButton">Play again!</a>
-    
+
   </body>
   </html>
